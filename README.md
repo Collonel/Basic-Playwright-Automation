@@ -54,8 +54,8 @@ This project follows the **Page Object Model (POM)** design pattern for the UI l
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/WYNN_QA_TEST_V1.0.git
-cd WYNN_QA_TEST_V1.0
+git clone https://github.com/Collonel/Basic-Playwright-Automation
+cd Project folder
 ```
 
 ### 2. 📦 Install Dependencies

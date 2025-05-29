@@ -1,14 +1,24 @@
+// Import Playwright's test and expect functions
 const { test, expect } = require('@playwright/test');
 
+// Base URL for the API endpoints
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
 
 test.describe('API Test Suite: JSONPlaceholder /posts Endpoint', () => {
 
-  test('GET /posts - Retrieve all posts', async ({ request }) => {
+  // Test1: Verify GET /posts endpoint returns all posts
+  test('GET /posts - Return all posts', async ({ request }) => {
+     // Make GET request to fetch all posts
     const response = await request.get(`${BASE_URL}/posts`);
+    
+    // Verify response is successful (status 200-299)
     expect(response.ok()).toBeTruthy();
+    // Verify response status code is 200
+    expect(response.status()).toBe(200);
 
+    // Parse response body as JSON
     const posts = await response.json();
+    // Verify we received an array of posts or at least one post
     expect(posts.length).toBeGreaterThan(0);
 
     // Validate structure of one post object
@@ -19,7 +29,7 @@ test.describe('API Test Suite: JSONPlaceholder /posts Endpoint', () => {
     expect(firstPost).toHaveProperty('userId');
   });
 
-  test('GET /posts/:id - Retrieve specific post by ID', async ({ request }) => {
+  test('GET /posts/:id - Return specific post by ID', async ({ request }) => {
     const response = await request.get(`${BASE_URL}/posts/1`);
     expect(response.ok()).toBeTruthy();
 
