@@ -1,0 +1,19 @@
+{
+  "name": "playwright-test-suite",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "npx playwright test",
+    "show-report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.52.0"
+  },
+  "description": "## Description",
+  "main": "playwright.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
