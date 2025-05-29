@@ -1,5 +1,5 @@
 
-# 📁 WYNN_QA_TEST_V1.0 — Automated UI & API Test Suite
+# 📁 Playwright — Automated UI & API Test Suite
 
 This project demonstrates the implementation of a basic automated test suite using **Playwright** (JavaScript), validating both **web UI functionality** and **API endpoints**.
 
@@ -8,7 +8,7 @@ This project demonstrates the implementation of a basic automated test suite usi
 ## 🧱 Project Folder Structure
 
 ```
-WYNN_QA_TEST_V1.0/
+_QA_TEST_V1.0/
 │
 ├── .github/                # GitHub workflow or issue templates (if any)
 ├── fixtures/                # Test data and sample files for uploads
